@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<architect-project version="1.0" appversion="1.0.8">
+ <project-name>Football</project-name>
+ <print-settings numCopies="1" zoom="1.0" pageNumbersPrinted="true" orientation="1" paperWidth="612.0" paperHeight="792.0" leftBorder="50.0" rightBorder="50.0" topBorder="50.0" bottomBorder="50.0" />
+ <project-data-sources>
+  <data-source id="DS0">
+   <property key="Logical" value="PlayPen Database" />
+  </data-source>
+ </project-data-sources>
+ <source-databases>
+ </source-databases>
+ <target-database id="ppdb" dbcs-ref="DS0">
+  <table id="TAB1" populated="true" UUID="c71ff4af-be4c-4cd9-86e5-6d279da536e2" name="Player" objectType="TABLE" physicalName="Player" >
+   <remarks></remarks>
+   <folder id="FOLTAB11" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL2" populated="true" UUID="2a7d4b6f-f908-4d18-92d7-83cf5d8ef15e" autoIncrement="true" autoIncrementSequenceName="Player_PlayerId_seq" defaultValue="" name="PlayerId" nullable="0" physicalName="PlayerId" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL3" populated="true" UUID="86232ace-0ca4-4240-9b53-63389dc61f27" autoIncrement="false" autoIncrementSequenceName="Player_PlayerName_seq" defaultValue="" name="PlayerName" nullable="0" physicalName="PlayerName" precision="50" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL4" populated="true" UUID="6140cd44-12a9-4225-bd79-b843a004392e" autoIncrement="false" autoIncrementSequenceName="PlayerPosition_PlayerPositionId_seq" defaultValue="" name="PlayerPositionId" nullable="0" physicalName="PlayerPositionId" precision="2" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="1" userDefinedTypeUUID="67ddc63f-5541-4dd1-9236-632d9d155e80" >
+     <remarks></remarks>
+    </column>
+    <column id="COL5" populated="true" UUID="dac96059-85e9-41c1-b59f-6a0be5de5e9d" autoIncrement="false" autoIncrementSequenceName="Team_TeamId_seq" defaultValue="" name="TeamId" nullable="0" physicalName="TeamId" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL6" populated="true" UUID="1770097e-6ee3-4c95-95c6-55751529c7f4" autoIncrement="false" autoIncrementSequenceName="Player_NumberOfPlays_seq" defaultValue="0" name="NumberOfPlays" nullable="1" physicalName="NumberOfPlays" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL7" populated="true" UUID="b08d077c-8f5a-4cea-9cf0-dc8de955fc4a" autoIncrement="false" autoIncrementSequenceName="Player_RushAttempts_seq" defaultValue="0" name="RushAttempts" nullable="1" physicalName="RushAttempts" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL8" populated="true" UUID="afaaee01-139a-4415-8ab8-d6fa07ca05ca" autoIncrement="false" autoIncrementSequenceName="Player_PassesTargeted_seq" defaultValue="0" name="PassTargets" nullable="1" physicalName="PassTargets" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL9" populated="true" UUID="2c014d35-5549-4cbe-ad86-8b480e4f7014" autoIncrement="false" autoIncrementSequenceName="Player_PassReceptions_seq" defaultValue="0" name="PassReceptions" nullable="1" physicalName="PassReceptions" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL10" populated="true" UUID="32c111bc-bf18-43ac-ab74-f3ad67e1d650" autoIncrement="false" autoIncrementSequenceName="Player_PassesAttempted_seq" defaultValue="0" name="PassesAttempted" nullable="1" physicalName="PassesAttempted" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL11" populated="true" UUID="dd1680ad-1085-4d22-91e0-ddb83c95865d" autoIncrement="false" autoIncrementSequenceName="Player_PassesCompleted_seq" defaultValue="0" name="PassesCompleted" nullable="1" physicalName="PassesCompleted" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL12" populated="true" UUID="fa7dd0d1-5a6f-4bae-91f3-3303f09cae58" autoIncrement="false" autoIncrementSequenceName="Player_RushYards_seq" defaultValue="0" name="RushYards" nullable="1" physicalName="RushYards" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL13" populated="true" UUID="949773db-f1df-46c5-8fd0-5f4e37fbb336" autoIncrement="false" autoIncrementSequenceName="Player_ReceivingYards_seq" defaultValue="0" name="ReceivingYards" nullable="1" physicalName="ReceivingYards" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL14" populated="true" UUID="34cd802a-76dd-4b06-9aa1-24884127d99c" autoIncrement="false" autoIncrementSequenceName="Player_PassYards_seq" defaultValue="0" name="PassYards" nullable="1" physicalName="PassYards" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL15" populated="true" UUID="d099e348-5f21-4f93-a530-2e3cfe76373c" autoIncrement="false" autoIncrementSequenceName="Player_Tackles_seq" defaultValue="0" name="Tackles" nullable="1" physicalName="Tackles" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL16" populated="true" UUID="60e77723-489f-4004-9885-0a3fde5c006a" autoIncrement="false" autoIncrementSequenceName="Player_Interceptions_seq" defaultValue="0" name="Interceptions" nullable="1" physicalName="Interceptions" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL17" populated="true" UUID="03fc13ed-0433-431b-97cb-dd1c3cd903a9" autoIncrement="false" autoIncrementSequenceName="CreditScore_CreditScoreId_seq" defaultValue="" name="CreditScoreId" nullable="0" physicalName="CreditScoreId" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL18" populated="true" UUID="daf5d0cf-df35-45ba-8959-24b7dca15fa6" autoIncrement="false" autoIncrementSequenceName="GradeScore_GradeScoreId_seq" defaultValue="" name="GradeScoreId" nullable="0" physicalName="GradeScoreId" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB13" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB12" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB14" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX19" populated="true" UUID="7b12e048-1a91-4513-b951-a805e423f65f" clustered="false" name="Player_pk" physicalName="player_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC20" populated="true" UUID="58dae5bd-0aa5-4d45-920f-258bc82401f2" ascendingOrDescending="UNSPECIFIED" column-ref="COL2" name="PlayerId" physicalName="PlayerId" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB21" populated="true" UUID="23d5abff-c469-4417-bc6c-c3d797bfb7e6" name="Team" objectType="TABLE" physicalName="Team" >
+   <remarks></remarks>
+   <folder id="FOLTAB211" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL22" populated="true" UUID="62138125-73a7-4832-b1a9-6e0f482dc503" autoIncrement="true" autoIncrementSequenceName="Team_TeamId_seq_1" defaultValue="" name="TeamId" nullable="0" physicalName="TeamId" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL23" populated="true" UUID="bfa22295-f8da-47ae-ba96-5f9c8a77fa9b" autoIncrement="false" autoIncrementSequenceName="Team_TeamName_seq" defaultValue="" name="TeamName" nullable="0" physicalName="TeamName" precision="30" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL24" populated="true" UUID="27530a1f-ae54-4d9f-b17b-ffe80c943761" autoIncrement="false" autoIncrementSequenceName="Division_DivisionId_seq" defaultValue="" name="DivisionId" nullable="0" physicalName="DivisionId" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL25" populated="true" UUID="d8b6470a-fd8b-45cb-8175-4c34fadc7ea4" autoIncrement="false" autoIncrementSequenceName="Player_NumberOfPlays_seq_1" defaultValue="0" name="TeamNumberOfPlays" nullable="1" physicalName="TeamNumberOfPlays" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL26" populated="true" UUID="bc1539a7-20c8-4b01-9eae-dabf0720586a" autoIncrement="false" autoIncrementSequenceName="Player_RushAttempts_seq_1" defaultValue="0" name="TeamRushAttempts" nullable="1" physicalName="TeamRushAttempts" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL27" populated="true" UUID="7afa735e-cd91-42e2-9bea-daf0610ae391" autoIncrement="false" autoIncrementSequenceName="Player_PassReceptions_seq_1" defaultValue="0" name="TeamPassReceptions" nullable="1" physicalName="TeamPassReceptions" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL28" populated="true" UUID="bdb7bfd7-a113-4399-a488-fa9e2914c08a" autoIncrement="false" autoIncrementSequenceName="Player_PassesAttempted_seq_1" defaultValue="0" name="TeamPassesAttempted" nullable="1" physicalName="TeamPassesAttempted" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL29" populated="true" UUID="63d7734b-4432-43f8-b19c-ca38c920677e" autoIncrement="false" autoIncrementSequenceName="Player_PassesCompleted_seq_1" defaultValue="0" name="TeamPassesCompleted" nullable="1" physicalName="TeamPassesCompleted" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL30" populated="true" UUID="5d6226a8-a16e-4d9c-95f3-8deecc913e24" autoIncrement="false" autoIncrementSequenceName="Player_RushYards_seq_1" defaultValue="0" name="TeamRushYards" nullable="1" physicalName="TeamRushYards" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL31" populated="true" UUID="a2fdda97-7a10-4522-af56-2f4bbc96ecb1" autoIncrement="false" autoIncrementSequenceName="Player_ReceivingYards_seq_1" defaultValue="0" name="TeamReceivingYards" nullable="1" physicalName="TeamReceivingYards" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL32" populated="true" UUID="80df38c3-db5c-42fa-a08c-0a074c836762" autoIncrement="false" autoIncrementSequenceName="Player_PassYards_seq_1" defaultValue="0" name="TeamPassYards" nullable="1" physicalName="TeamPassYards" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL33" populated="true" UUID="b40d1e9a-8379-47f9-927a-19f35423a689" autoIncrement="false" autoIncrementSequenceName="Player_Tackles_seq_1" defaultValue="0" name="TeamTackles" nullable="1" physicalName="TeamTackles" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL34" populated="true" UUID="218f5c21-35de-4885-bdb8-341e78668492" autoIncrement="false" autoIncrementSequenceName="Player_Interceptions_seq_1" defaultValue="0" name="TeamInterceptions" nullable="1" physicalName="TeamInterceptions" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB213" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB212" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB214" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX35" populated="true" UUID="f626e1f6-4fac-44ac-8020-c101903e361e" clustered="false" name="Team_pk" physicalName="team_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC36" populated="true" UUID="e58b8eae-6eba-4a38-bd0d-08cfb15073a8" ascendingOrDescending="UNSPECIFIED" column-ref="COL22" name="TeamId" physicalName="TeamId" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB37" populated="true" UUID="92ef7a01-ebd5-4cf8-a11e-f310e92a4bfb" name="PlayerPosition" objectType="TABLE" physicalName="PlayerPosition" >
+   <remarks></remarks>
+   <folder id="FOLTAB371" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL38" populated="true" UUID="3f83533b-643a-414b-97a3-afb0f84a6614" autoIncrement="false" autoIncrementSequenceName="PlayerPosition_PlayerPositionId_seq_1" defaultValue="" name="PlayerPositionId" nullable="0" physicalName="PlayerPositionId" precision="2" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="1" userDefinedTypeUUID="67ddc63f-5541-4dd1-9236-632d9d155e80" >
+     <remarks></remarks>
+    </column>
+    <column id="COL39" populated="true" UUID="9a02df1a-f7c4-4e28-8d66-3934c5ec9ce5" autoIncrement="false" autoIncrementSequenceName="PlayerPosition_PlayerPositionName_seq" defaultValue="" name="PlayerPositionName" nullable="0" physicalName="PlayerPositionName" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB373" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB372" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB374" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX40" populated="true" UUID="ed277cf1-206a-495c-a911-d85b75d4900c" clustered="false" name="PlayerPosition_pk" physicalName="playerposition_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC41" populated="true" UUID="10b7c17a-cabb-48d9-b398-5872511cb50e" ascendingOrDescending="UNSPECIFIED" column-ref="COL38" name="PlayerPositionId" physicalName="PlayerPositionId" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB42" populated="true" UUID="5af83ef3-5a90-45a3-9283-5dc978fcd965" name="Division" objectType="TABLE" physicalName="Division" >
+   <remarks></remarks>
+   <folder id="FOLTAB421" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL43" populated="true" UUID="428106fe-c74f-42bc-9f82-4981f86c2e74" autoIncrement="true" autoIncrementSequenceName="Division_DivisionId_seq_1" defaultValue="" name="DivisionId" nullable="0" physicalName="DivisionId" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL44" populated="true" UUID="c3981dfd-2df8-4d5b-b35d-f2eda21338fb" autoIncrement="false" autoIncrementSequenceName="Division_DivisionName_seq" defaultValue="" name="DivisionName" nullable="0" physicalName="DivisionName" precision="50" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL45" populated="true" UUID="f364cd3c-4f30-4b5e-9677-dcc3dd83608e" autoIncrement="false" autoIncrementSequenceName="Conference_ConferenceId_seq" defaultValue="" name="ConferenceId" nullable="0" physicalName="ConferenceId" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB423" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB422" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB424" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX46" populated="true" UUID="b7a1ce3a-3568-4875-a019-90120b757ae6" clustered="false" name="Division_pk" physicalName="division_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC47" populated="true" UUID="6fb87101-1f1d-4472-9a67-d944ed099f4e" ascendingOrDescending="UNSPECIFIED" column-ref="COL43" name="DivisionId" physicalName="DivisionId" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB48" populated="true" UUID="1059414a-ef5e-443a-bbf1-f30e846201f3" name="Conference" objectType="TABLE" physicalName="Conference" >
+   <remarks></remarks>
+   <folder id="FOLTAB481" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL49" populated="true" UUID="be54d16f-5537-4f0c-b398-da09ba3f1d90" autoIncrement="true" autoIncrementSequenceName="Conference_ConferenceId_seq_1" defaultValue="" name="ConferenceId" nullable="0" physicalName="ConferenceId" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL50" populated="true" UUID="abf08135-c1e6-4aff-8170-14d1a6d61a0f" autoIncrement="false" autoIncrementSequenceName="Conference_ConferenceName_seq" defaultValue="" name="ConferenceName" nullable="0" physicalName="ConferenceName" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB483" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB482" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB484" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX51" populated="true" UUID="46f4d855-3d7f-4bc1-a17f-54e250c43798" clustered="false" name="Conference_pk" physicalName="conference_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC52" populated="true" UUID="2db5794e-82d0-46b0-af40-20e945cca2a2" ascendingOrDescending="UNSPECIFIED" column-ref="COL49" name="ConferenceId" physicalName="ConferenceId" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB53" populated="true" UUID="93c34e7a-935a-4fa9-a26f-21096d0d1f97" name="CreditScore" objectType="TABLE" physicalName="CreditScore" >
+   <remarks></remarks>
+   <folder id="FOLTAB531" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL54" populated="true" UUID="b4954378-08d5-4e8f-a206-9fa65402ebb1" autoIncrement="true" autoIncrementSequenceName="CreditScore_CreditScoreId_seq_1" defaultValue="" name="CreditScoreId" nullable="0" physicalName="CreditScoreId" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL55" populated="true" UUID="c28a64ba-5896-4178-a233-33061313a2b1" autoIncrement="false" autoIncrementSequenceName="Player_CreditScore_seq" defaultValue="0" name="CreditScore" nullable="0" physicalName="CreditScore" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="6" userDefinedTypeUUID="7e55bcd0-7606-4153-b749-9c397f12c4d8" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB533" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB532" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB534" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX56" populated="true" UUID="efdd569c-0838-4971-a457-fb5097f1f6ac" clustered="false" name="CreditScore_pk" physicalName="creditscore_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC57" populated="true" UUID="747d4bc0-e36f-4ca5-b1ef-99a8e1f71cf1" ascendingOrDescending="UNSPECIFIED" column-ref="COL54" name="CreditScoreId" physicalName="CreditScoreId" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB58" populated="true" UUID="36092f38-6178-483d-a129-42ee05f4d2af" name="GradeScore" objectType="TABLE" physicalName="GradeScore" >
+   <remarks></remarks>
+   <folder id="FOLTAB581" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL59" populated="true" UUID="f0120695-c053-4169-b5fe-fa3fb2041963" autoIncrement="true" autoIncrementSequenceName="GradeScore_GradeScoreId_seq_1" defaultValue="" name="GradeScoreId" nullable="0" physicalName="GradeScoreId" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL60" populated="true" UUID="44ea3574-ea73-437f-ae1e-a69430acba53" autoIncrement="false" autoIncrementSequenceName="Player_GradeScore_seq" defaultValue="0" name="GradeScore" nullable="0" physicalName="GradeScore" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="6" userDefinedTypeUUID="7e55bcd0-7606-4153-b749-9c397f12c4d8" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB583" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB582" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB584" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX61" populated="true" UUID="d1ebc220-adba-49c0-b1d9-119f0a25bd69" clustered="false" name="GradeScore_pk" physicalName="gradescore_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC62" populated="true" UUID="dabf3e94-c366-43b9-9f59-48bc30ed8f28" ascendingOrDescending="UNSPECIFIED" column-ref="COL59" name="GradeScoreId" physicalName="GradeScoreId" />
+    </index>
+   </folder>
+  </table>
+  <relationships>
+   <relationship id="REL63" populated="true" UUID="e4c121c1-8841-4c89-afd8-9f9e96804a15" deferrability="7" deleteRule="3" fk-table-ref="TAB1" fkCardinality="7" identifying="false" name="Team_Player_fk" physicalName="team_player_fk" pk-table-ref="TAB21" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP64" populated="true" UUID="a6507cd1-5444-4642-b119-1f3bc44094c0" fk-column-ref="COL5" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL22" />
+   </relationship>
+   <relationship id="REL65" populated="true" UUID="f065f5c4-20d5-4f89-9baa-73024880ab51" deferrability="7" deleteRule="3" fk-table-ref="TAB1" fkCardinality="7" identifying="false" name="PlayerPosition_Player_fk" physicalName="playerposition_player_fk" pk-table-ref="TAB37" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP66" populated="true" UUID="5e9715d3-b4ee-47a6-a306-4b4ad7eec96a" fk-column-ref="COL4" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL38" />
+   </relationship>
+   <relationship id="REL67" populated="true" UUID="014085f9-9e6b-4b87-8ce6-5e19cdfa1368" deferrability="7" deleteRule="3" fk-table-ref="TAB21" fkCardinality="7" identifying="false" name="Division_Team_fk" physicalName="division_team_fk" pk-table-ref="TAB42" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP68" populated="true" UUID="6d7e6ec5-bb8f-4c1d-96f1-1f33ffabf357" fk-column-ref="COL24" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL43" />
+   </relationship>
+   <relationship id="REL69" populated="true" UUID="0c1fcdf6-789d-47a4-9531-257d279c76f9" deferrability="7" deleteRule="3" fk-table-ref="TAB42" fkCardinality="7" identifying="false" name="Conference_Division_fk" physicalName="conference_division_fk" pk-table-ref="TAB48" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP70" populated="true" UUID="691a2cd4-268d-40b4-a2f2-0d5944c079a5" fk-column-ref="COL45" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL49" />
+   </relationship>
+   <relationship id="REL71" populated="true" UUID="25261e7e-4b55-4ebc-b5af-ec1f4cf17cdb" deferrability="7" deleteRule="3" fk-table-ref="TAB1" fkCardinality="7" identifying="false" name="CreditScore_Player_fk" physicalName="creditscore_player_fk" pk-table-ref="TAB53" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP72" populated="true" UUID="366a8b2d-4a0f-4e55-9c43-36db573b85be" fk-column-ref="COL17" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL54" />
+   </relationship>
+   <relationship id="REL73" populated="true" UUID="0a0d2f5b-a0ed-48fa-b23d-a303ad2b9097" deferrability="7" deleteRule="3" fk-table-ref="TAB1" fkCardinality="7" identifying="false" name="GradeScore_Player_fk" physicalName="gradescore_player_fk" pk-table-ref="TAB58" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP74" populated="true" UUID="50dcc5c7-b77f-495b-ad0f-438beed4e0ab" fk-column-ref="COL18" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL59" />
+   </relationship>
+  </relationships>
+ </target-database>
+ <ddl-generator type="ca.sqlpower.architect.ddl.MySqlDDLGenerator" allow-connection="false"> </ddl-generator>
+ <liquibase-settings useSeparateChangeSets="false" generateId="false" idStart="1"/>
+ <create-kettle-job-settings filePath="" jobName="" schemaName="" kettleJoinType="0" savingToFile="true" />
+ <play-pen zoom="1.1892071150027206" viewportX="0" viewportY="0" relationship-style="rectilinear" names-displayLogicalNames="true" showPrimaryTag="true" showForeignTag="true" showAlternateTag="true" columnVisibility="ALL" relationshipLabelVisibility="true">
+  <table-pane table-ref="TAB1" x="20" y="33" bgColor="0xfbdabb" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB21" x="39" y="546" bgColor="0xe6d794" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB37" x="404" y="20" bgColor="0xc8b7ea" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB42" x="505" y="546" bgColor="0xc8b7ea" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB48" x="1046" y="546" bgColor="0xdfedce" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB53" x="417" y="194" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB58" x="528" y="301" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-link relationship-ref="REL65" pkConnection="0.6031746031746031" fkConnection="0.08250825082508251" rLineColor="0x000000" pkLabelText="PlayerPositionId" fkLabelText="PlayerPositionId" orientation="18"/>
+  <table-link relationship-ref="REL63" pkConnection="0.4977973568281938" fkConnection="0.5136186770428015" rLineColor="0x000000" pkLabelText="TeamId" fkLabelText="TeamId" orientation="72"/>
+  <table-link relationship-ref="REL67" pkConnection="0.4936708860759494" fkConnection="0.16317991631799164" rLineColor="0x000000" pkLabelText="DivisionId" fkLabelText="DivisionId" orientation="18"/>
+  <table-link relationship-ref="REL69" pkConnection="0.49206349206349204" fkConnection="0.3924050632911392" rLineColor="0x000000" pkLabelText="ConferenceId" fkLabelText="ConferenceId" orientation="18"/>
+  <table-link relationship-ref="REL73" pkConnection="0.07171314741035857" fkConnection="1.0" rLineColor="0x000000" pkLabelText="GradeScoreId" fkLabelText="GradeScoreId" orientation="24"/>
+  <table-link relationship-ref="REL71" pkConnection="0.49206349206349204" fkConnection="0.6336633663366337" rLineColor="0x000000" pkLabelText="CreditScoreId" fkLabelText="CreditScoreId" orientation="18"/>
+ </play-pen>
+ <critic-manager>
+  <critic-grouping platformType="Generic" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.PrimaryKeyCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.RelationshipMappingTypeCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.EmptyRelationshipCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.AlphaNumericNameCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.AlphaNumericSequenceNameCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SetDefaultOnColumnWithNoDefaultCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SetNullOnNonNullableColumnCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.DuplicateNameCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="DB2" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.DB2UnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="H2" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.H2UnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="HSQLDB" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.HSQLDBUnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="MySQL" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.MySQLCommentCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.MySQLReservedWordsCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.MySQLUnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="Oracle" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.OraclePhysicalNameCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.OracleReservedWordsCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.OracleUnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="PostgreSQL" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.PostgreSQLReservedWordsCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="SQL Server" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SQLServerUnsupportedFeaturesCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SQLServerReservedWordsCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="SQL Server 2000" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SQLServer2000UnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="SQL Server 2005" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SQLServer2005UnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+ </critic-manager>
+ <profiles topNCount="10">
+  </profiles>
+  <olap>
+  </olap>
+  <olap-gui>
+  </olap-gui>
+</architect-project>
